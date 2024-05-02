@@ -1,0 +1,14 @@
+.list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.error {
+  font-size: 20px;
+  color: red;
+}

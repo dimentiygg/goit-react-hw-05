@@ -1,0 +1,19 @@
+.header {
+  padding: 10px 0;
+  background-color: black;
+}
+.navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+}
+
+.link {
+  font-size: 30px;
+}
+
+.activeLink {
+  color: blueviolet;
+}

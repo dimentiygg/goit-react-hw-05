@@ -1,0 +1,13 @@
+.moviesList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.listItem {
+  border-radius: 10px;
+  overflow: hidden;
+}
