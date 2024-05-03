@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import { getMovieDetail } from "../../MovieApi";
 import {
   Link,
@@ -81,7 +81,9 @@ export default function MovieDetailsPage() {
           </NavLink>
         </li>
       </ul>
-      <Outlet />
+      <Suspense fallback={<Loader />}>
+        <Outlet />
+      </Suspense>
     </>
   );
 }

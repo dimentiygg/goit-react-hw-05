@@ -37,9 +37,6 @@ export default function MoviesPage() {
     fetchMovieByName();
   }, [seacrhQuery]);
 
-  console.log(movieResults);
-  console.log(seacrhQuery);
-
   const submitHandler = (e) => {
     e.preventDefault();
     const form = e.target;
