@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { getTrendingMovies } from "../../MovieApi";
 import Loader from "../../components/Loader/Loader";
 import MoviesList from "../../components/MoviesList/MoviesList";
+import css from "./HomePage.module.css";
 
 export default function HomePage() {
   const [TrendingMovies, setTrendingMovies] = useState([]);
@@ -26,7 +27,7 @@ export default function HomePage() {
 
   return (
     <>
-      <h1>Trending today</h1>
+      <h1 className={css.title}>Trending today</h1>
       {TrendingMovies.length > 0 && <MoviesList movies={TrendingMovies} />}
       {loader && <Loader />}
     </>
